@@ -24,7 +24,7 @@ function TaskPage() {
   }
 
   function deleteUser(userId) {
-    const newUserList = users.filter((user) => user.id !== userId);
+    const newUserList = usersBK.filter((user) => user.id !== userId);
 
     setUsers(newUserList);
     setUsersBK(newUserList);
