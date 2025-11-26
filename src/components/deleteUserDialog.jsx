@@ -14,7 +14,7 @@ import { Button } from "./ui/button";
 function deleteUserDialog({ user, deleteUser, dialog, openDialog }) {
   return (
     <Dialog open={dialog} onOpenChange={openDialog}>
-      <DialogContent className="max-sm:w-[80vw]">
+      <DialogContent className="max-sm:w-[90vw]">
         <DialogHeader>
           <DialogTitle>Are you sure you want to delete this user?</DialogTitle>
           <DialogDescription>
@@ -24,6 +24,7 @@ function deleteUserDialog({ user, deleteUser, dialog, openDialog }) {
         </DialogHeader>
         <DialogFooter>
           <Button
+            className="max-sm:mb-4" 
             variant="outline"
             onClick={function () {
               deleteUser(user.id);
