@@ -24,7 +24,7 @@ function deleteUserDialog({ user, deleteUser, dialog, openDialog }) {
         </DialogHeader>
         <DialogFooter>
           <Button
-            className="max-sm:mb-4" 
+            className="max-sm:mt-4" 
             variant="outline"
             onClick={function () {
               deleteUser(user.id);
